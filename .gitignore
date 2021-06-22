@@ -1,3 +1,6 @@
+.cache
+public
+node_modules
 # Logs
 logs
 *.log
