@@ -14,7 +14,7 @@ export default function Index() {
         <Button
           sx={{ marginTop: 3, color: "black" }}
           onClick={() => {
-            alert("hello")
+            netlifyIdentity.open()
           }}
         >
           Log In
