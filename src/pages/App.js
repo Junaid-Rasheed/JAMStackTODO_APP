@@ -40,7 +40,10 @@ let DashLoggedOut = props => {
   return (
     <Container>
       <Flex sx={{ flexDirection: "column", padding: 3 }}>
-        <Heading as="h1">Get Stuff Done</Heading>
+      <NavLink as={Link} to="/" p={2}>
+          Back To Home
+        </NavLink>
+        <Heading as="h1" sx={{  padding: 3 }}>Get Stuff Done</Heading>
         <Button
           sx={{ marginTop: 2, color: "black" }}
           onClick={() => {

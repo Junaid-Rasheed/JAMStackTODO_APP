@@ -8,7 +8,7 @@ export default function Index() {
 
   return (
     <Container>
-      <Flex as="nav">
+      <Flex as="nav" sx={{ padding: 3 }}>
         <NavLink as={Link} to="/" p={2}>
           Home
         </NavLink>
