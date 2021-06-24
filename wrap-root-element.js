@@ -1,6 +1,7 @@
 const React = require("react")
 const { ThemeProvider } = require("theme-ui")
 const { light } = require("@theme-ui/presets")
+const { Provider } = require("./identity-context")
 
 const newTheme = {
   ...light,
@@ -8,5 +9,7 @@ const newTheme = {
 }
 
 module.exports = ({ element }) => (
-  <ThemeProvider theme={newTheme}>{element}</ThemeProvider>
+  <Provider>
+    <ThemeProvider theme={newTheme}>{element}</ThemeProvider>
+  </Provider>
 )
