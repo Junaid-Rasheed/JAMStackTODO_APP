@@ -1,4 +1,6 @@
 [build]
-    command = "npm run build"
+    command = "npm run build && cd functions/graphqll && npm install"
     publish= "public"
     functions = "functions"
+
+    
