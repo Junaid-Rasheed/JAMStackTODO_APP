@@ -11,7 +11,6 @@ import {
 import { Link } from "@reach/router"
 import { IdentityContext } from "../../identity-context"
 
-
 //Reducer Actions
 const todosReducer = (state, action) => {
   switch (action.type) {
@@ -31,9 +30,8 @@ export default () => {
   const { user, identity: netlifyIdentity } = useContext(IdentityContext)
 
   const [todos, dispatch] = useReducer(todosReducer, [])
-  
-  const inputRef = useRef()
 
+  const inputRef = useRef()
 
   return (
     <Container>
@@ -82,8 +80,10 @@ export default () => {
                 })
               }}
             >
-              <Checkbox checked={todo.done} />
-              <span>{todo.value}</span>
+              <Flex as="li">
+                <Checkbox checked={todo.done} />
+                <span>{todo.value}</span>
+              </Flex>
             </Flex>
           ))}
         </ul>
