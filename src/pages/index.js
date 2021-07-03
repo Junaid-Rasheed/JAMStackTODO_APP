@@ -16,10 +16,11 @@ export default function Index() {
           DashBoard
         </NavLink>
 
-        {user && <NavLink p={2}>{user.user_metadata.full_name}</NavLink>}
+        {user && (<NavLink p={2}>{user.user_metadata.full_name}</NavLink>)}
       </Flex>
       <Flex sx={{ flexDirection: "column", padding: 3 }}>
         <Heading as="h1"> TODO APP</Heading>
+        <p>Your Data is stored in faunadb database 'serverless-netlify-todo-new' controlled by Junaid Rasheed</p>
         <Button
           sx={{ marginTop: 2, color: "black" }}
           onClick={() => {

@@ -1,8 +1,7 @@
 import React, { useContext } from "react"
-import { Router } from "@reach/router"
+import { Router,Link } from "@reach/router"
 import { IdentityContext } from "../../identity-context"
 import { Container, Heading, Button, Flex, NavLink } from "theme-ui"
-import { Link } from "gatsby"
 import Dash from "../components/dashboard"
 
 let DashLoggedOut = props => {
